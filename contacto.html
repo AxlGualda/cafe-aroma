@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Contacto</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee px-3">
+        <a class="navbar-brand fw-bold" href="index.html">Café Aroma</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTACTO -->
+    <main class="container py-5">
+
+        <h2 class="text-center text-coffee mb-4">Contacto</h2>
+
+        <div class="row justify-content-center g-4">
+
+            <div class="col-md-5">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>📍 Dirección:</strong> Costa Rica 4820, Palermo, C.A.B.A.</li>
+                    <li class="list-group-item"><strong>📞 Teléfono:</strong> (011) 1234-5678</li>
+                    <li class="list-group-item"><strong>✉️ Email:</strong> cafe.aroma@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="col-md-5">
+                <img src="img/ubi.png" class="img-fluid rounded shadow" alt="Mapa de ubicación del café">
+            </div>
+
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+
+                <h4 class="text-coffee mb-3">Envíanos un mensaje</h4>
+
+                <form action="mailto:cafe.aroma@gmail.com?subject=Consulta%20desde%20la%20Web" 
+                      method="POST" enctype="text/plain">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="Nombre" placeholder="ej.: María Perez" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="Email" placeholder="ej.: tuemail@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" name="Telefono" placeholder="ej.: 1123445567">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="Mensaje" rows="4" placeholder="ej.: Tu mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn bg-coffee text-white w-100">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER CON REDES -->
+    <footer class="bg-coffee text-white text-center py-3 mt-5">
+        <p class="mb-2">© 2025 Café Aroma | Todos los derechos reservados</p>
+
+        <div class="d-flex justify-content-center gap-4 fs-4">
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/" target="_blank" class="text-white">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/" target="_blank" class="text-white">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5491112345678" target="_blank" class="text-white">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
